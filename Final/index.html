@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            /*文字的項目符號去除*/
+            list-style: none;
+            /*文字的底線去除*/
+        }
+        
+        p {
+            font-size: 20px;
+        }
+        
+        nav {
+            width: 100%;
+            /*導覽列寬*/
+            background: lightblue;
+            height: 80px;
+            /*導覽列高*/
+        }
+        
+        nav ul {
+            float: right;
+            /*顯示在右邊*/
+            margin-right: 20px;
+            /*距離右邊邊界20px*/
+        }
+        
+        nav ul li {
+            display: inline-block;
+            /*水平顯示標籤*/
+            line-height: 80px;
+            /*距離頂端80px*/
+            margin: 0px 30px;
+            /*margin 上   下   左  右
+                     0px  30px 0px 30px*/
+        }
+        
+        nav ul li a {
+            color: blueviolet;
+            font-size: 18px;
+        }
+        
+        nav ul li a:hover {
+            /*滑鼠指到nav ul li a上方時，會執行以下動作*/
+            background-color: coral;
+        }
+        
+        label.logo {
+            color: black;
+            font-size: 30px;
+            line-height: 80px;
+            padding: 100px;
+        }
+        
+        @media(max-width:500px) {
+            nav ul li {
+                /*display: block;*/
+                text-align: center;
+                width: 100%;
+                line-height: 100px;
+            }
+            ul {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label class="logo">孟璇購物</label>
+        <ul>
+            <li><a href="#">服飾</a></li>
+            <li><a href="#">3C產品</a></li>
+            <li><a href="#">汽車零件</a></li>
+            <li><a href="#">生活百貨</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
